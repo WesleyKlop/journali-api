@@ -60,7 +60,7 @@ jobs:
     steps:
       - name: set environment variables if staging
         if: ${{ github.event_name == 'push' }}
-        uses: allenevans/set-env@v1.1.0
+        uses: allenevans/set-env@v2.0.1
         with:
           SERVICE: ${{ env.STAGING_SERVICE }}
           NETWORK: ${{ env.STAGING_NETWORK }}
@@ -68,7 +68,7 @@ jobs:
           ENV_NAME: staging
       - name: set environment variables if production
         if: ${{ github.event_name == 'release' }}
-        uses: allenevans/set-env@v1.1.0
+        uses: allenevans/set-env@v2.0.1
         with:
           SERVICE: ${{ env.PRODUCTION_SERVICE }}
           NETWORK: ${{ env.PRODUCTION_NETWORK }}
