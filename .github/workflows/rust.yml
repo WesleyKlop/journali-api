@@ -14,7 +14,7 @@ jobs:
     name: check
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
       - name: Install latest stable
         uses: actions-rs/toolchain@v1
         with:
@@ -55,7 +55,7 @@ jobs:
           POSTGRES_USER: journali
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Install stable toolchain
         uses: actions-rs/toolchain@v1
         with:
@@ -96,7 +96,7 @@ jobs:
     name: fmt
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
       - name: Install latest stable
         uses: actions-rs/toolchain@v1
         with:
@@ -112,7 +112,7 @@ jobs:
     name: clippy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
       - name: Install latest stable
         uses: actions-rs/toolchain@v1
         with:
