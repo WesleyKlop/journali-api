@@ -81,7 +81,7 @@ jobs:
           name: code-coverage-report
           path: lcov.info
       - name: report coverage
-        uses: romeovs/lcov-reporter-action@v0.2.17
+        uses: romeovs/lcov-reporter-action@v0.2.21
         if: ${{ github.event_name == 'pull_request' }}
         with:
           github-token: ${{ github.token }}
