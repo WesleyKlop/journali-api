@@ -23,7 +23,7 @@ serde = "*"
 serde_json = "*"
 chrono = {version = "*", features = ["serde"]}
 jsonwebtoken = "7.1.2"
-bcrypt = "0.8.2"
+bcrypt = "0.10.1"
 
 [features]
 # Treat warnings as a build error
